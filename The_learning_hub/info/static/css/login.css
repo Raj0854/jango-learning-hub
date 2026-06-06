@@ -1,0 +1,125 @@
+.page {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+
+}
+body {
+    background-image: url("../img/image\ .jpg");
+    background-size: cover;
+}
+
+.container1{
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color:rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texth2{
+    text-transform: uppercase;
+    padding: 10px 0;
+    font-size: 28px;
+    color: white;
+}
+
+.form-group {
+    position: relative;
+    border-radius: 5px;
+    margin: 30px 0;
+    width: 300px;
+    border-bottom: 3px solid white;
+}
+
+.form-group input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+    color: white;
+    padding: 0 30px 0 10px;
+
+}
+.form-group label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 18px;
+}
+input:focus~label,
+input:valid~label {
+    top: -10px;
+    font-size: 14px;
+    color: white;
+    transition: 0.5s;
+}
+.form-group i {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 20px;
+
+}
+.p1 {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    padding: 10px 0;
+
+}
+.p1 a1 {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.p1 a1:hover {
+    text-decoration: underline;
+    font-style: italic;
+}
+.btn1 {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: rgb(209, 56, 56);
+    font-size: 18px;
+    border-radius: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn1:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+input[type="checkbox"] {
+    accent-color: rgb(209, 56, 56);
+    margin-top: 5px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}

@@ -22,3 +22,5 @@ def login(request):
     return render(request, 'login.html')
 def register(request):
     return render(request, 'register.html')
+def enquiry(request):
+    return render(request, 'enquiry.html')

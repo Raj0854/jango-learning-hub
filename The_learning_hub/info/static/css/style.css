@@ -1,0 +1,78 @@
+body {
+    background-image: url("../img/image\ .jpg");
+    background-size: cover;
+}
+
+.head {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.bg {
+    background-color: #fa5959 !important;
+}
+
+.head1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: italic;
+    color: white !important;
+    margin-left: 10px;
+}
+
+.search {
+    border-radius: 50px !important;
+}
+
+.WHITE {
+    color: black !important;
+    background-color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 50px !important;
+}
+
+input::placeholder {
+    color: black !important;
+}
+
+.bg-img {
+    background-image: url("../img/ng.jpg");
+    background-size: cover;
+    border-radius: 20px
+}
+
+.img1 {
+    border-radius: 80px;
+    box-shadow: 10px 10px 8px 10px rgba(0, 0, 0, 0.5);
+    height: 180px;
+}
+
+.line {
+    text-shadow: 2px 2px 4px #000000;
+    font-weight: bold;
+    font-style: italic;
+    color: white !important;
+
+}
+
+.line2 {
+    text-shadow: 2px 2px 4px #FFFFFF;
+    font-weight: bold;
+    font-style: italic;
+    color: black !important;
+
+}
+
+.img2 {
+    border-radius: 80px;
+    box-shadow: 10px 10px 8px 10px rgba(0, 0, 0, 0.5);
+    height: 500px;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}

@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +11,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="{% static 'img/logo2.png' %}">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
@@ -18,8 +21,9 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg opacity-70" data-bs-theme="dark">
         <div class="container ">
-            <img src="img/logo2.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
-            <a class="navbar-brand   head" href="index.html"> <B> The Learning Hub</B></a>
+            <img src="{% static 'img/logo2.png' %}" alt="Logo" width="50" height="50"
+                class="d-inline-block align-text-top">
+            <a class="navbar-brand   head" href="{% url 'index' %}"> <B> The Learning Hub</B></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -28,13 +32,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav  mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active  head1" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active  head1" aria-current="page" href="{% url 'index' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link head1 " href="batches.html">Batches</a>
+                        <a class="nav-link head1 " href="{% url 'batches' %}">Batches</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link head1" href="courses.html">Courses</a>
+                        <a class="nav-link head1" href="{% url 'courses' %}">Courses</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle head1" href="#" role="button" data-bs-toggle="dropdown"
@@ -42,12 +46,12 @@
                             More
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item head1" href="about.html">About Us</a></li>
-                            <li><a class="dropdown-item head1" href="contact.html">Contact Us</a></li>
+                            <li><a class="dropdown-item head1" href="{% url 'about' %}">About Us</a></li>
+                            <li><a class="dropdown-item head1" href="{% url 'contact' %}">Contact Us</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item head1" href="free-tutorials.html">Free tutorials</a></li>
+                            <li><a class="dropdown-item head1" href="{% url 'free_tutorials' %}">Free tutorials</a></li>
                         </ul>
                     </li>
 
@@ -60,7 +64,7 @@
 
                     <button class="btn  btn-outline-light search" type="submit"> Search</button>
                     &nbsp;&nbsp;&nbsp;
-                    <div class="d-flex justify-content-center fs-4 text-white"> </i><a href="login.html"> <i
+                    <div class="d-flex justify-content-center fs-4 text-white"> </i><a href="{% url 'login' %}"> <i
                                 class="bi bi-person-fill"></i></a> </div>
                 </form>
             </div>
@@ -80,8 +84,8 @@
                             AM, perfect for early risers.</p>
                         <p class="card-text"><b>Days:</b> Monday to Friday</p>
                         <p class="card-text"><b>Instructor:</b> Pankaj Chouhan</p>
-                        <a href="enquiry.html" class="btn btn-primary">Enroll Now</a>
-                        <a href="enquiry.html" class="btn btn-info ">Book Demo</a>
+                        <a href="{% url 'login' %}" class="btn btn-primary">Enroll Now</a>
+                        <a href="{% url 'enquiry' %}" class="btn btn-info ">Book Demo</a>
                     </div>
                 </div>
             </div>
@@ -93,8 +97,8 @@
                             runs from 1:00 PM to 3:00 PM.</p>
                         <p class="card-text"><b>Days:</b> Monday to Friday</p>
                         <p class="card-text"><b>Instructor:</b> Jane Smith</p>
-                        <a href="enquiry.html" class="btn btn-primary">Enroll Now</a>
-                        <a href="enquiry.html" class="btn btn-info">Book Demo</a>
+                        <a href="{% url 'login' %}" class="btn btn-primary">Enroll Now</a>
+                        <a href="{% url 'enquiry' %}" class="btn btn-info">Book Demo</a>
                     </div>
                 </div>
             </div>
@@ -106,8 +110,8 @@
                             runs from 6:00 PM to 8:00 PM.</p>
                         <p class="card-text"><b>Days:</b> Monday to Friday</p>
                         <p class="card-text"><b>Instructor:</b> Emily Johnson</p>
-                        <a href="enquiry.html" class="btn btn-primary">Enroll Now</a>
-                        <a href="enquiry.html" class="btn btn-info">Book Demo</a>
+                        <a href="{% url 'login' %}" class="btn btn-primary">Enroll Now</a>
+                        <a href="{% url 'enquiry' %}" class="btn btn-info">Book Demo</a>
                     </div>
                 </div>
             </div>
@@ -122,8 +126,8 @@
                             morning batch runs from 8:00 AM to 10:00 AM.</p>
                         <p class="card-text text-white"><b>Days:</b> Monday to Friday</p>
                         <p class="card-text text-white"><b>Instructor:</b> David Brown</p>
-                        <a href="enquiry.html" class="btn btn-primary">Enroll Now</a>
-                        <a href="enquiry.html" class="btn btn-info">Book Demo</a>
+                        <a href="{% url 'login' %}" class="btn btn-primary">Enroll Now</a>
+                        <a href="{% url 'enquiry' %}" class="btn btn-info">Book Demo</a>
                     </div>
                 </div>
             </div>
@@ -135,8 +139,8 @@
                             afternoon batch runs from 1:00 PM to 3:00 PM.</p>
                         <p class="card-text text-white"><b>Days:</b> Monday to Friday</p>
                         <p class="card-text text-white"><b>Instructor:</b> Jane Smith</p>
-                        <a href="enquiry.html" class="btn btn-primary">Enroll Now</a>
-                        <a href="enquiry.html" class="btn btn-info">Book Demo</a>
+                        <a href="{% url 'login' %}" class="btn btn-primary">Enroll Now</a>
+                        <a href="{% url 'enquiry' %}" class="btn btn-info">Book Demo</a>
                     </div>
                 </div>
             </div>
@@ -148,8 +152,8 @@
                             evening batch runs from 6:00 PM to 8:00 PM.</p>
                         <p class="card-text text-white"><b>Days:</b> Monday to Friday</p>
                         <p class="card-text text-white"><b>Instructor:</b> Varun Gupta</p>
-                        <a href="enquiry.html" class="btn btn-primary">Enroll Now</a>
-                        <a href="enquiry.html" class="btn btn-info">Book Demo</a>
+                        <a href="{% url 'login' %}" class="btn btn-primary">Enroll Now</a>
+                        <a href="{% url 'enquiry' %}" class="btn btn-info">Book Demo</a>
                     </div>
                 </div>
             </div>
@@ -164,8 +168,8 @@
                             PM, perfect for early risers.</p>
                         <p class="card-text"><b>Days:</b> Monday to Friday</p>
                         <p class="card-text"><b>Instructor:</b> Dr. Alice Johnson</p>
-                        <a href="enquiry.html" class="btn btn-primary">Enroll Now</a>
-                        <a href="enquiry.html" class="btn btn-info">Book Demo</a>
+                        <a href="{% url 'login' %}" class="btn btn-primary">Enroll Now</a>
+                        <a href="{% url 'enquiry' %}" class="btn btn-info">Book Demo</a>
                     </div>
                 </div>
             </div>
@@ -177,8 +181,8 @@
                             runs from 2:00 PM to 4:00 PM.</p>
                         <p class="card-text"><b>Days:</b> Monday to Friday</p>
                         <p class="card-text"><b>Instructor:</b> Pankaj Chouhan</p>
-                        <a href="enquiry.html" class="btn btn-primary">Enroll Now</a>
-                        <a href="enquiry.html" class="btn btn-info">Book Demo</a>
+                        <a href="{% url 'login' %}" class="btn btn-primary">Enroll Now</a>
+                        <a href="{% url 'enquiry' %}" class="btn btn-info">Book Demo</a>
                     </div>
                 </div>
             </div>
@@ -190,8 +194,8 @@
                             runs from 7:00 PM to 9:00 PM.</p>
                         <p class="card-text"><b>Days:</b> Monday to Friday</p>
                         <p class="card-text"><b>Instructor:</b> Michael Lee</p>
-                        <a href="enquiry.html" class="btn btn-primary">Enroll Now</a>
-                        <a href="enquiry.html" class="btn btn-info">Book Demo</a>
+                        <a href="{% url 'login' %}" class="btn btn-primary">Enroll Now</a>
+                        <a href="{% url 'enquiry' %}" class="btn btn-info">Book Demo</a>
                     </div>
                 </div>
             </div>

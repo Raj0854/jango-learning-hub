@@ -24,3 +24,5 @@ def register(request):
     return render(request, 'register.html')
 def enquiry(request):
     return render(request, 'enquiry.html')
+def forget_password(request):
+    return render(request, 'forget_password.html')

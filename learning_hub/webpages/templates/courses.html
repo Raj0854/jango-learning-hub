@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Learning Hub</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<body>
+    {% include "header.html" %}
+     <!-- Courses Section -->
+    <div class="container mt-5 mb-4">
+        <h2 class="text-center mb-4">Our Courses</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/course1.jpg" class="card-img-top p-4" alt="Course 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development</h5>
+                        <p class="card-text">Learn HTML, CSS, JavaScript, and modern frameworks to build stunning
+                            websites.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/course4.jpg" class="card-img-top p-4" alt="Course 4">
+                    <div class="card-body">
+                        <h5 class="card-title">C Programming</h5>
+                        <p class="card-text">Learn the fundamentals of C programming, including syntax, data structures,
+                            and algorithms.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/course3.jpg" class="card-img-top p-4" alt="Course 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Digital Marketing</h5>
+                        <p class="card-text">Learn the latest digital marketing strategies to grow your online presence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/course2.jpg" class="card-img-top p-4" alt="Course 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Science</h5>
+                        <p class="card-text">Master data analysis, visualization, and machine learning with our
+                            comprehensive course.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/course5.jpg" class="card-img-top p-4" alt="Course 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Cybersecurity</h5>
+                        <p class="card-text">Understand the fundamentals of cybersecurity and how to protect digital
+                            assets.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/course6.jpg" class="card-img-top p-4" alt="Course 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Graphic Design</h5>
+                        <p class="card-text">Explore design principles and tools to create visually appealing graphics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Courses Section End -->
+
+    {% include "footer.html" %}
+    
+</body>
+</html>

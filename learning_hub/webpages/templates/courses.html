@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Learning Hub</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <style>
     *{
@@ -19,7 +21,7 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
                 <div class="card h-100">
-                    <img src="img/course1.jpg" class="card-img-top p-4" alt="Course 1">
+                    <img src="{% static 'img/course1.jpg' %}" class="card-img-top p-4" alt="Course 1">
                     <div class="card-body">
                         <h5 class="card-title">Web Development</h5>
                         <p class="card-text">Learn HTML, CSS, JavaScript, and modern frameworks to build stunning
@@ -29,7 +31,7 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="img/course4.jpg" class="card-img-top p-4" alt="Course 4">
+                    <img src="{% static 'img/course4.jpg' %}" class="card-img-top p-4" alt="Course 4">
                     <div class="card-body">
                         <h5 class="card-title">C Programming</h5>
                         <p class="card-text">Learn the fundamentals of C programming, including syntax, data structures,
@@ -39,7 +41,7 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="img/course3.jpg" class="card-img-top p-4" alt="Course 3">
+                    <img src="{% static 'img/digital marketing.jpg' %}" class="card-img-top p-4" alt="Course 3">
                     <div class="card-body">
                         <h5 class="card-title">Digital Marketing</h5>
                         <p class="card-text">Learn the latest digital marketing strategies to grow your online presence.
@@ -49,7 +51,7 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="img/course2.jpg" class="card-img-top p-4" alt="Course 2">
+                    <img src="{% static 'img/course2.jpg' %}" class="card-img-top p-4" alt="Course 2">
                     <div class="card-body">
                         <h5 class="card-title">Data Science</h5>
                         <p class="card-text">Master data analysis, visualization, and machine learning with our
@@ -59,7 +61,7 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="img/course5.jpg" class="card-img-top p-4" alt="Course 5">
+                    <img src="{% static 'img/course5.jpg' %}" class="card-img-top p-4" alt="Course 5">
                     <div class="card-body">
                         <h5 class="card-title">Cybersecurity</h5>
                         <p class="card-text">Understand the fundamentals of cybersecurity and how to protect digital
@@ -69,7 +71,7 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="img/course6.jpg" class="card-img-top p-4" alt="Course 6">
+                    <img src="{% static 'img/course6.jpg' %}    " class="card-img-top p-4" alt="Course 6">
                     <div class="card-body">
                         <h5 class="card-title">Graphic Design</h5>
                         <p class="card-text">Explore design principles and tools to create visually appealing graphics.

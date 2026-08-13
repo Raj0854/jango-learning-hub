@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Learning Hub</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
     {% include "header.html" %}
@@ -12,7 +14,7 @@
     <h1 class="mt-5 text-white line2">About Us</h1>
     <div class="row">
       <div class="col-md-6">
-        <img src="img/about-us.jpg" alt="About Us" class="img-fluid img2 mb-4 mt-4">
+        <img src="{% static 'img/about-us.jpg' %}" alt="About Us" class="img-fluid img2 mb-4 mt-4">
       </div>
       <div class="col-md-6 text-black">
         <h2 class="text-black fs-1 line2">Our Mission</h2>
